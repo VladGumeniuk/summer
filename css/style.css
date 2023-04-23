@@ -302,16 +302,16 @@ body {
   .header__burger::after {
     bottom: 0;
   }
-  .header__burger.active span {
+  .header__burger.actived span {
     transform: scale(0);
   }
-  .header__burger.active::before {
+  .header__burger.actived::before {
     transform: rotate(45deg);
-    top: 26px;
+    top: 9px;
   }
-  .header__burger.active::after {
+  .header__burger.actived::after {
     transform: rotate(-45deg);
-    bottom: 26px;
+    bottom: 9px;
   }
   .header__menu {
     position: fixed;
@@ -319,14 +319,15 @@ body {
     margin: 0 auto;
     padding: 0;
     top: 80px;
-    left: -100%;
+    left: 0;
     width: 100%;
+    transform: scale(0);
     height: 100%;
     background: rgba(51, 51, 51, 0.8);
     transition: all 0.5s ease;
   }
-  .header__menu.active {
-    left: 0;
+  .header__menu.actived {
+    transform: scale(1);
   }
   .header__list {
     flex-direction: column;
