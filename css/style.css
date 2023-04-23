@@ -106,6 +106,67 @@ body {
   }
 }
 
+.grafiti-green {
+  position: absolute;
+  top: 60%;
+  z-index: -1;
+}
+
+.grafiti-green2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+.grafiti-green3 {
+  position: absolute;
+  top: 70%;
+  z-index: -1;
+}
+
+.grafiti-yellow {
+  position: absolute;
+  top: 8%;
+  right: 0;
+  z-index: -1;
+}
+
+.grafiti-yellow3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.grafiti-pink {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  z-index: -1;
+}
+
+.grafiti-pink2 {
+  position: absolute;
+  top: 50%;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+.grafiti-pink3 {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  z-index: -1;
+}
+
+.grafiti-orange {
+  position: absolute;
+  top: 30%;
+  z-index: -1;
+}
+
 .scroll {
   display: none;
 }
@@ -316,6 +377,7 @@ body {
 }
 
 .changes {
+  position: relative;
   padding: 55px 0;
 }
 .changes__cards {
@@ -402,6 +464,7 @@ body {
 }
 
 .team {
+  position: relative;
   padding-bottom: 55px;
 }
 .team__list {
@@ -508,7 +571,7 @@ body {
 }
 
 .terms {
-  padding-top: 20px;
+  padding: 20px;
   background: radial-gradient(50% 2317.79% at 100% 50%, #a8eae6 4.49%, rgba(182, 235, 232, 0.807985) 22.83%, rgba(242, 239, 239, 0) 100%), radial-gradient(71.1% 1780.59% at 11.59% 28.9%, #a8eae6 0%, rgba(242, 239, 239, 0) 100%);
 }
 .terms__list {
@@ -555,6 +618,7 @@ body {
 }
 
 .info {
+  position: relative;
   padding-bottom: 55px;
 }
 .info__list {
@@ -602,6 +666,7 @@ body {
 }
 
 .active {
+  position: relative;
   padding-bottom: 55px;
 }
 .active__list {
@@ -678,6 +743,7 @@ body {
   font-weight: 700;
   font-size: 45px;
   color: #fafafa;
+  border-radius: 20px 0px;
 }
 @media (max-width: 1280px) {
   .telegeam__link {
@@ -697,6 +763,7 @@ body {
 }
 
 .days {
+  position: relative;
   padding-bottom: 55px;
 }
 
@@ -1005,6 +1072,7 @@ body {
 }
 
 .anketa-section {
+  position: relative;
   padding-bottom: 55px;
 }
 

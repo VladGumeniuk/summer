@@ -22,7 +22,59 @@ body {
   line-height: 1.18;
   color: #29353e;
 }
+.grafiti-green {
+  position: absolute;
+  top: 60%;
+  z-index: -1;
+}
+.grafiti-green2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+.grafiti-green3 {
+  position: absolute;
+  top: 70%;
+  z-index: -1;
+}
+.grafiti-yellow {
+  position: absolute;
+  top: 8%;
+  right: 0;
+  z-index: -1;
+}
+.grafiti-yellow3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.grafiti-pink {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  z-index: -1;
+}
 
+.grafiti-pink2 {
+  position: absolute;
+  top: 50%;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+.grafiti-pink3 {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  z-index: -1;
+}
+.grafiti-orange {
+  position: absolute;
+  top: 30%;
+  z-index: -1;
+}
 // SCROLL ANIM =====================================
 
 .scroll {

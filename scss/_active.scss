@@ -1,4 +1,5 @@
 .active {
+  position: relative;
   padding-bottom: 55px;
   &__list {
     // margin-top: 55px;
@@ -59,6 +60,7 @@
     font-weight: 700;
     @include adaptiv-value("font-size", 45, 18);
     color: #fafafa;
+    border-radius: 20px 0px;
     img {
       margin-right: 10px;
       @media (max-width: 768px) {
