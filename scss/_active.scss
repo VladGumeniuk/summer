@@ -1,14 +1,15 @@
 .active {
   position: relative;
   padding-bottom: 55px;
+
   &__list {
-    // margin-top: 55px;
     display: grid;
     grid-template-columns: repeat(6, 150px);
     max-width: 1050px;
-    margin: 55px auto;
+    margin: 55px auto 0;
     gap: 30px;
     padding-bottom: 10px;
+
     @media (max-width: 1000px) {
       overflow-x: scroll;
       gap: 15px;
@@ -25,6 +26,7 @@
   &__image {
     display: flex;
     justify-content: center;
+
     img {
       max-width: 60px;
     }
@@ -39,16 +41,20 @@
     @include adaptiv-value("line-height", 24, 20);
   }
 }
+
 .telegeam {
   display: flex;
+  margin-top: 50px;
   align-items: center;
   justify-content: center;
   height: 200px;
   background-color: #00b61d;
   line-height: 1.18;
+
   @media (max-width: 768px) {
     height: 90px;
   }
+
   // .telegeam__link
 
   &__link {
@@ -61,8 +67,10 @@
     @include adaptiv-value("font-size", 45, 18);
     color: #fafafa;
     border-radius: 20px 0px;
+
     img {
       margin-right: 10px;
+
       @media (max-width: 768px) {
         width: 28px;
       }

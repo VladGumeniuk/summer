@@ -1,0 +1,33 @@
+.price-changes__table {
+    margin: 55px 0 10px;
+    width: 100%;
+    font-weight: 500;
+    color: #29353E;
+    text-align: center;
+    border-collapse: collapse;
+
+    @media (max-width: 768px) {
+        margin: 25px 0 10px;
+    }
+}
+
+.price-changes__title {
+    font-size: 24px;
+    padding: 5px;
+    @include adaptiv-value('font-size', 24, 10);
+}
+
+tr {
+    border-bottom: 3px solid #9C9C9C;
+}
+
+.price-changes-text {
+    padding: 5px;
+    @include adaptiv-value('font-size', 32, 12);
+    line-height: 1.18;
+}
+
+.price-changes__color {
+    color: #00B61D;
+    text-decoration: underline;
+}

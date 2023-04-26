@@ -2,11 +2,13 @@
   position: relative;
   // .team__list
   padding-bottom: 55px;
+
   &__list {
-    margin: 55px 0;
+    margin-top: 55px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 23px;
+
     @media (max-width: 768px) {
       display: block;
     }
@@ -20,6 +22,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px 0px;
     height: 335px;
+
     @media (max-width: 768px) {
       margin-bottom: 15px;
     }
@@ -31,6 +34,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+
     img {
       max-width: 100%;
     }
@@ -55,6 +59,7 @@
     line-height: 18px;
     text-align: center;
     color: #29353e;
+
     span {
       font-weight: 500;
     }
@@ -73,16 +78,19 @@
 }
 
 .contacks {
+  margin-top: 50px;
   height: 200px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: #ff9900;
   line-height: 1.18;
+
   @media (max-width: 768px) {
     height: 120px;
     flex-direction: column;
   }
+
   // .contacks__phone
 
   &__phone {
