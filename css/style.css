@@ -950,7 +950,7 @@ body {
 }
 
 .parents__list {
-  margin-bottom: 20px;
+  margin: 20px 0;
   padding-bottom: 15px;
   display: grid;
   grid-template-columns: repeat(4, 264px);
