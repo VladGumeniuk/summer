@@ -1,0 +1,138 @@
+.changes {
+  position: relative;
+  // .changes__cards
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 55px;
+  }
+
+  // .changes__cards-item
+
+  &__cards-item {
+    text-align: center;
+    padding: 20px 24px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px 0px;
+    font-weight: 700;
+    color: $colorText;
+  }
+
+  // .changes__cards-image
+
+  &__cards-image {
+    margin-bottom: 10px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  // .changes__cards-title
+
+  &__cards-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+    @include adaptiv-value("font-size", 32, 24);
+
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  // .changes__cards-data
+
+  &__cards-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    @include adaptiv-value("font-size", 24, 18);
+
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  // .changes__cards-text
+
+  &__cards-text {
+    font-weight: 500;
+    @include adaptiv-value("font-size", 20, 18);
+
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  // .changes__cards-price
+
+  &__cards-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    @include adaptiv-value("font-size", 36, 24);
+    color: #FF9900;
+
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  // .changes__cards-oldprice
+
+  &__cards-oldprice {
+    margin-bottom: 10px;
+    font-weight: 700;
+    @include adaptiv-value("font-size", 24, 20);
+    color: #9C9C9C;
+    text-decoration: line-through;
+  }
+
+  // .changes__cards-btn
+
+  &__cards-btn {
+    display: block;
+    padding: 18px 28px;
+    font-weight: 500;
+    @include adaptiv-value("font-size", 24, 18);
+    color: #ffffff;
+    background: #00b61d;
+    border-radius: 15px 0px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #FF9900;
+    }
+  }
+
+  &__cards-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-weight: 700;
+    @include adaptiv-value("font-size", 20, 18);
+    color: $colorText;
+
+    img {
+      margin-left: 5px;
+      width: 16px;
+    }
+  }
+
+  &__copy {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    @include adaptiv-value('font-size', 24, 14);
+    color: #FF5B5B;
+  }
+}
