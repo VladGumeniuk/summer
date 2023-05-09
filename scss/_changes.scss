@@ -2,32 +2,41 @@
   position: relative;
   // .changes__cards
 
-  &__cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 55px;
-  }
-
-  // .changes__cards-item
-
-  &__cards-item {
-    text-align: center;
-    padding: 20px 24px;
-    background: #ffffff;
+  &__inner {
+    max-width: 1143px;
+    margin: 20px auto 0;
+    display: flex;
+    align-items: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px 0px;
-    font-weight: 700;
-    color: $colorText;
+    background-color: #fff;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  // .changes__content
+
+  &__content {
+    width: 100%;
+    text-align: center;
+    padding: 0 30px;
   }
 
   // .changes__cards-image
 
-  &__cards-image {
-    margin-bottom: 10px;
+  &__image {
+    display: flex;
+    justify-content: center;
 
     img {
-      max-width: 100%;
+      border-radius: 50px 0px 0px 0px;
+
+      @media (max-width: 768px) {
+        max-width: 100%;
+        object-fit: cover;
+      }
     }
   }
 
@@ -43,6 +52,10 @@
 
     img {
       margin-right: 5px;
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 15px;
     }
   }
 
@@ -60,14 +73,28 @@
     }
   }
 
+  &__text {
+    line-height: 1.2;
+    @include adaptiv-value('font-size', 20, 15);
+    text-align: center;
+    color: $colorText;
+
+    span {
+      color: #00B61D;
+      font-weight: 500;
+    }
+  }
+
   // .changes__cards-text
 
   &__cards-text {
+    margin-top: 15px;
     font-weight: 500;
     @include adaptiv-value("font-size", 20, 18);
 
     span {
       text-decoration: underline;
+      color: #00B61D;
     }
   }
 
@@ -96,6 +123,18 @@
     text-decoration: line-through;
   }
 
+  &__link-list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      padding-bottom: 20px;
+      flex-direction: column;
+    }
+  }
+
   // .changes__cards-btn
 
   &__cards-btn {
@@ -116,11 +155,13 @@
   &__cards-info {
     display: flex;
     justify-content: center;
+    padding: 18px 28px;
     align-items: center;
-    margin-top: 15px;
     font-weight: 700;
+    border: 3px solid #00B61D;
+    border-radius: 15px 0px;
     @include adaptiv-value("font-size", 20, 18);
-    color: $colorText;
+    color: #00B61D;
 
     img {
       margin-left: 5px;
@@ -129,10 +170,10 @@
   }
 
   &__copy {
-    margin-top: 20px;
+    @include adaptiv-value('margin-bottom', 30, 10);
     text-align: center;
     font-weight: 700;
-    @include adaptiv-value('font-size', 24, 14);
+    @include adaptiv-value('font-size', 20, 14);
     color: #FF5B5B;
   }
 }

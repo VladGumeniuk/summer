@@ -1,0 +1,88 @@
+.footer {
+    padding: 44px 0;
+    background-image: url(../images/footer-fon.jpg);
+    background-size: cover;
+    background-position: center;
+    // .footer__inner
+
+    &__inner {
+
+        align-items: center;
+
+        @media (min-width: 992px) {
+            display: flex;
+        }
+    }
+
+    // .footer__content
+
+    &__content {
+
+        text-align: center;
+
+        @media (min-width: 768px) {
+            flex: 0 0 50%;
+        }
+    }
+
+    // .footer__title
+
+    &__title {
+        margin-bottom: 20px;
+        font-weight: 700;
+        @include adaptiv-value('font-size', 55, 32);
+        line-height: 1.2;
+
+        color: #FFFFFF;
+    }
+
+    // .footer__phone
+
+    &__phone {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-weight: 700;
+        @include adaptiv-value('font-size', 40, 24);
+        line-height: 1.2;
+
+        color: #FFFFFF;
+    }
+
+    // .footer__telegram
+
+    &__telegram {
+        padding: 11px 8px;
+        display: inline-flex;
+        align-items: center;
+        font-weight: 700;
+        @include adaptiv-value('font-size', 24, 16);
+        line-height: 1.2;
+
+        color: #FAFAFA;
+        background: #25A4E3;
+        border-radius: 10px 0px;
+
+        img {
+            margin-right: 5px;
+            width: 30px;
+        }
+    }
+
+    // .footer__image
+
+    &__image {
+        img {
+            border-radius: 30px 0px;
+        }
+
+        @media (max-width: 992px) {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}

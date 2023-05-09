@@ -16,3 +16,9 @@ header__list.onclick = function () {
   //   back.classList.classList.remove("lock");
   //   header__list.classList.remove("lock");
 };
+
+const arrayNumber = [1, 2, 3, 4, 5]
+function array(string) {
+  // TODO
+  return string.split(' ')
+}
