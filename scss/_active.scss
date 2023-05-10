@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: repeat(5, 150px);
     max-width: 1050px;
+    justify-content: center;
     margin: 55px auto 0;
     gap: 30px;
     padding-bottom: 10px;
