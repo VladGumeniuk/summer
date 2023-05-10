@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Головна</title>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -21,7 +22,7 @@
             <ul class="header__list">
               <li><a class="header__link" href="#">Головна</a></li>
               <li><a class="header__link" href="#team">Про табір</a></li>
-              <li><a class="header__link" href="./html/gallery.html">Галарея</a></li>
+              <li><a class="header__link" href="./html/gallery.html">Фотогаларея</a></li>
               <li>
                 <a class="header__link" href="./html/info.html">Для батьків</a>
               </li>
@@ -226,67 +227,291 @@
           </div>
         </div>
       </section>
-      <section class="info section"> <!-- INFO -->
+      <div class="section">
+        <h3 class="title" style="margin-bottom: 20px;">МИ ПРОПОНУЄМО</h3>
         <div class="container">
-          <h3 class="title">МИ ПРОПОНУЄМО</h3>
-          <ul class="info__list">
-            <li class="info__cards">
-              <div class="info__subtitle">Місцевість</div>
-              <div class="info__image">
-                <img src="./images/info01.png" alt="img">
-              </div>
-              <div class="info__content">
-                <div class="info__text">
-                  Готельний комплекс розташований посеред прекрасних гірських ландшафтів в славному містечку Яблуниця
-                  (7км від Буковелю).
-                  Чудове місце, наповнене чистим повітрям та свіжим киснем Карпатських гір.
+          <div class="inner">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper" style="max-width: 900px; margin: 0 auto;">
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/apartments1.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/apartments2.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/apartments3.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/apartments4.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/apartments5.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/apartments6.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/apartments7.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/apartments8.jpg" alt="img">
                 </div>
               </div>
-            </li>
-            <li class="info__cards">
-              <div class="info__subtitle">Територія</div>
-              <div class="info__image">
-                <img src="./images/info02.png" alt="img">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="content">
+              <h4 class="content__title">Комфортне проживання</h4>
+              <div class="content__text">
+                <p>
+                  Знаходячись у Лекечі, Чернівецької області, ви зможете насолодитися проживанням у
+                  готельному
+                  комплексі, де буде
+                  проходити табір. Комплекс розташований в самому серці Карпатського лісу, що дарує
+                  можливість
+                  насолоджуватися неймовірно
+                  мальовничими пейзажами і дихати кришталево чистим повітрям. У безпосередньої
+                  близькості
+                  знаходиться річка Лекечі та гора
+                  "Лекечанські скелі". А також в недалекій доступності розташовані каскад водоспадів
+                  та
+                  джерело
+                  мінеральної води Лужки.
+                </p>
+
+                <p>
+                  Діти, які беруть участь у таборі, проживатимуть в номерах класу "Люкс", кожен з яких
+                  розрахований на 4 особи. У кожному
+                  номері є шафа для зберігання одягу, а також балкон з видом на гори. Крім того, у
+                  номерах
+                  є
+                  окрема ванна кімната з
+                  умивальником, туалетом і душовою кабіною. Усі номери обладнані постільною білизною
+                  та
+                  феном,
+                  тому діти будуть мати все
+                  необхідне для комфортного перебування.
+                </p>
+
               </div>
-              <div class="info__content">
-                <div class="info__text">
-                  На території розташований оновлений корпус, ресторан, спа - центр, комфортні альтанки, новенький
-                  басейн, площадка для
-                  проведення вечірніх заходів. Все що треба для справжнього дитячого відпочинку.
-                </div>
-              </div>
-            </li>
-            <li class="info__cards">
-              <div class="info__subtitle">Харчування</div>
-              <div class="info__image">
-                <img src="./images/info03.png" alt="img">
-              </div>
-              <div class="info__content">
-                <div class="info__text">
-                  Дітям пропонується 5-разове харчування: сніданок - обід - полуденок - вечеря - друга вечеря. Шеф
-                  кухарі готують смачні,
-                  традиційні українські страви з додаванням європейської нотки сучасності.
-                  *Можна скласти персональне безлактозне або вегетаріанське меню.
-                </div>
-              </div>
-            </li>
-            <li class="info__cards">
-              <div class="info__subtitle">Проживання</div>
-              <div class="info__image">
-                <img src="./images/info04.png" alt="img">
-              </div>
-              <div class="info__content">
-                <div class="info__text">
-                  Комфортабельні апартаменти, розміщення по 2-3 дитини. В кожній кімнаті є все необхідне. Всі номери
-                  мають балкон, звідки
-                  відкривається широка панорама Карпатської природи.
-                </div>
-              </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
-        <img class="grafiti-orange" src="./images/ellipse-orange.svg" alt="img">
-      </section>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="inner">
+            <div class="content order">
+              <h4 class=" content__title">Харчування</h4>
+              <div class="content__text">
+                <p>
+                  В ресторані готельного комплексу розробили спеціальне меню для дітей шкільного віку,
+                  яке складається зі страв
+                  гуцульської та європейської кухні, приготовлених з використанням натуральних
+                  продуктів, які вирощуються неподалік від
+                  готелю і не містять шкідливих речовин.
+
+                </p>
+
+                <p>
+                  Для дітей у таборі передбачено 5 прийомів їжі на день, які включають сніданок, обід,
+                  вечерю та два перекуси. Перекуси
+                  складаються зі свіжих фруктів, ягід, цільнозернових крекерів та кисло-молочних
+                  продуктів, що забезпечує різноманітність
+                  і корисність раціону. Всі страви складено з метою забезпечити дітям смачне та
+                  здорове харчування, яке допомагає
+                  підтримувати їхнє здоров'я та енергію на цілий день.
+                </p>
+
+              </div>
+            </div>
+            <div class="swiper mySwiper order2">
+              <div class="swiper-wrapper content__image" style="max-width: 900px; margin: 0 auto;">
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="../images/gallery/eat-gallery/1.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="../images/gallery/eat-gallery/2.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="../images/gallery/eat-gallery/3.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="../images/gallery/eat-gallery/4.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="../images/gallery/eat-gallery/5.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="../images/gallery/eat-gallery/6.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="../images/gallery/eat-gallery/7.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="../images/gallery/eat-gallery/8.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="../images/gallery/eat-gallery/9.jpg" alt="img">
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="inner">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper" style="max-width: 900px; margin: 0 auto;">
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/territory1.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/territory2.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/territory3.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/territory4.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/territory5.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/territory6.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/territory7.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/territory8.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/territory9.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="../images/gallery/territory10.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/territory11.jpg" alt="img">
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="content">
+              <h4 class="content__title">Крутезну локацію</h4>
+              <div class="content__text">
+                <p>
+                  Ласкаво просимо до нашого комплексу, розташованого в самому серці Карпатського лісу. Наша унікальна
+                  локація дарує
+                  незабутні враження та натхнення, окутуючи вас неймовірно мальовничими пейзажами та кришталево чистим
+                  повітрям.
+                </p>
+
+                <p>
+                  Знаходження нашого комплексу в Карпатському лісі також надає можливість для активного відпочинку та
+                  спортивних заходів.
+                  Ви зможете насолоджуватися піших прогулянках, велосипедних поїздках або організувати пікнік на
+                  природі. Кожен момент у
+                  нашій локації пронизаний свіжістю та енергією природи, що надихає вас на нові враження та дослідження.
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="inner">
+            <div class="content order">
+              <h4 class=" content__title">Безпечний відпочинок</h4>
+              <div class="content__text">
+                <p>
+                  Охорона та безпека є невід'ємною частиною нашого табору. Наша територія обладнана спеціальною
+                  огородженою системою, що
+                  допомагає забезпечити контрольований доступ до табірної зони. Наші досвідчені працівники охорони
+                  забезпечують постійний
+                  обхід табірної території протягом доби.
+                </p>
+
+                <p>
+                  Наш особливий підхід до безпеки полягає у тому, що керівники табору проживають в одному корпусі з
+                  дітьми. Вони
+                  піклуються про дотримання правил безпеки, контролюють та сприяють створенню позитивного та дружнього
+                  середовища для всіх
+                  учасників табору.
+                </p>
+
+              </div>
+            </div>
+            <div class="swiper mySwiper order2">
+              <div class="swiper-wrapper content__image" style="max-width: 900px; margin: 0 auto;">
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/seсurity1.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/seсurity2.jpg" alt="img">
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="inner">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper" style="max-width: 900px; margin: 0 auto;">
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/med1.jpg" alt="img">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper__image" src="./images/gallery/med2.jpg" alt="img">
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="content">
+              <h4 class="content__title">Медичне обслуговування</h4>
+              <div class="content__text">
+                <p>
+                  Медичне благополуччя та безпека кожної дитини є для нас надзвичайно важливими. В нашому дитячому
+                  таборі ми забезпечуємо
+                  належне медичне обслуговування. Наш табір має фельшера, який постійно присутній на території. Перед
+                  приїздом у табір,
+                  ов’язково заповнюється медична анкета. Ця анкета містить важливу інформацію про медичний стан дитини,
+                  алергічні реакції,
+                  прийом ліків та інші важливі деталі, які допоможуть нашому медичному персоналу надати належну допомогу
+                  та уникнути
+                  можливих проблем.
+                </p>
+
+                <p>
+                  Безпека наших дітей є нашим пріоритетом. Тому ми також співпрацюємо з місцевою лікарнею, розташованою
+                  всього в 7
+                  кілометрах від табору.
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="service section">
         <div class="container">
           <h2 class="title">СЕРВІС</h2>
@@ -730,6 +955,8 @@
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="../js/swiper.js"></script>
   <script src="js/burger.js"></script>
   <script src="js/form.js"></script>
 </body>
