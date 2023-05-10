@@ -53,7 +53,7 @@
 
     &__telegram {
         padding: 11px 8px;
-        display: inline-flex;
+        display: inline-block;
         align-items: center;
         font-weight: 700;
         @include adaptiv-value('font-size', 24, 16);
@@ -67,6 +67,17 @@
             margin-right: 5px;
             width: 30px;
         }
+    }
+
+    &__submit {
+        display: inline-block;
+        margin-bottom: 15px;
+        padding: 11px 25px;
+        font-weight: 700;
+        background: #00b61d;
+        border-radius: 20px 0px;
+        color: #fafafa;
+        @include adaptiv-value('font-size', 24, 16);
     }
 
     // .footer__image
