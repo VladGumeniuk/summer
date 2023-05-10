@@ -1650,6 +1650,11 @@ tr {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
+@media (max-width: 768px) {
+  .gallery__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .gallery__card {
   cursor: pointer;
 }
@@ -1690,17 +1695,18 @@ tr {
   align-items: center;
   width: 30px;
   height: 30px;
-  top: 10%;
-  right: 10%;
+  top: 20px;
+  right: 20px;
   background: #fff;
   border-radius: 50%;
   z-index: 10;
   color: #29353e;
   font-size: 22px;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .gallery__close {
-    top: 30%;
-    right: 5%;
+    top: 5px;
+    right: 5px;
   }
 }
